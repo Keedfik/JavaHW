@@ -34,6 +34,7 @@ public class HW1 {
         }
         // ------- 1 -------
         */
+        /*
         // ------- 2 -------
         for (int i = 2; i <= 1000; i++) {
             boolean flag = true;
@@ -49,5 +50,33 @@ public class HW1 {
             }
         }
         // ------- 2 -------
+        */
+
+        // ------- 3 -------
+        Scanner in = new Scanner(System.in);
+
+        System.out.print("Input operation sign ");
+        String sign = in.nextLine();
+        System.out.print("Input first number ");
+        int num1 = in.nextInt();
+        System.out.print("Input second number ");
+        int num2 = in.nextInt();
+        
+        switch(sign){
+            case "+":
+                System.out.println(num1+" + "+num2+" = "+(num1+num2));
+                break;
+            case "-":
+                System.out.println(num1+" - "+num2+" = "+(num1-num2));
+                break;
+            case "*":
+                System.out.println(num1+" * "+num2+" = "+(num1*num2));
+                break;
+            case "/":
+                System.out.println(num1+" / "+num2+" = "+(num1/num2));
+                break;
+        }
+        // ------- 3 -------
     }
     
+}
